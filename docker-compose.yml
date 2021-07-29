@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  simutrans:
+    build: .
+    ports:
+      - "13353:13353"
+    volumes:
+      - "./config:/simutrans/config"
+      - "./save:/simutrans/save"
+      - "./pak:/simutrans/pak"
